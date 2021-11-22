@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import Navbar from "./shared/navbar";
 import { down } from "styled-breakpoints";
 
 const HeaderContainer = styled.div`
