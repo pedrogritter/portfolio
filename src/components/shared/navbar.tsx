@@ -1,5 +1,7 @@
 import { useState } from "react";
+// import { isDesktop } from "./././core/utils";
 import styled from "styled-components";
+import { Utils } from "../../core/utils";
 
 const NavbarContainer = styled.nav`
   font: 20px "Titillium Web", sans-serif;
@@ -65,25 +67,16 @@ const [current, setCurrent] = useState("Home");
     );
   });
 
-  return (
-    // <nav id="nav-wrap">
-    //         <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-    //       <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-    //         <ul id="nav" className="nav">
-    //            <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
-    //            <li><a className="smoothscroll" href="#about">About</a></li>
-    //          <li><a className="smoothscroll" href="#resume">Resume</a></li>
-    //            <li><a className="smoothscroll" href="#portfolio">Works</a></li>
-    //            <li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>
-    //            <li><a className="smoothscroll" href="#contact">Contact</a></li>
-    //         </ul>
-    //      </nav>
+  const mobileNav = <></>;
 
-    <NavbarContainer>
-      <NavList id="nav" className="nav">
-        {NavItems}
-      </NavList>
-    </NavbarContainer>
+  const desktopNav = <NavbarContainer>
+  <NavList id="nav" className="nav">
+    {NavItems}
+  </NavList>
+</NavbarContainer>
+
+  return (
+    Utils.isDesktop() ? desktopNav : mobileNav
   );
 };
 
