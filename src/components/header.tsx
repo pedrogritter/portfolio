@@ -24,6 +24,9 @@ const Overlay = styled.div`
   min-height: 500px;
   width: 100%;
   background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   ${down("lg")}{
       height: 100vh;
