@@ -24,7 +24,7 @@ const NavList = styled.ul`
   text-align: center;
 `;
 
-const NavItem = styled.li<{ active: boolean }>`
+const NavItem = styled.li<{ active?: boolean }>`
   position: relative;
   list-style: none;
   height: 48px;
@@ -116,7 +116,8 @@ const Navbar = () => {
 
   const NavItems = Items.map((item, key) => {
     return (
-      <NavItem key={key} active={current === item.name}>
+      // <NavItem key={key} active={current === item.name}>
+      <NavItem key={key} >
         <a
           className="smoothscroll"
           href={item.ref}
