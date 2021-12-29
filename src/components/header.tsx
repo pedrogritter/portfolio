@@ -14,8 +14,8 @@ const HeaderContainer = styled.div`
   overflow: hidden;
   font: 20px "Titillium Web", sans-serif;
 
-  ${down("lg")}{
-      height: 100vh;
+  ${down("lg")} {
+    height: 100vh;
   }
 `;
 
@@ -27,9 +27,11 @@ const Overlay = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
-  ${down("lg")}{
-      height: 100vh;
+  ${down("lg")} {
+    height: 100vh;
+    justify-content: space-evenly;
   }
 `;
 
@@ -41,6 +43,10 @@ const InformationContainer = styled.div`
   padding: 5rem;
   padding-top: 10rem;
   color: white;
+
+  ${down("lg")} {
+    padding: 2rem 0rem;
+  }
 `;
 
 const Title = styled.h1`
@@ -50,8 +56,8 @@ const Title = styled.h1`
   margin: 0 auto 18px auto;
   text-shadow: 0px 1px 3px rgb(0 0 0 / 80%);
 
-  ${down("md")}{
-      font-size: 40px;
+  ${down("md")} {
+    font-size: 40px;
   }
 `;
 
@@ -74,6 +80,23 @@ const Links = styled.div`
   }
 `;
 
+const DownButtonContainer = styled.div`
+  display: flex;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: white;
+  justify-self: flex-end;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  ${down("md")} {
+    width: 4rem;
+    height: 4rem;
+  }
+`;
+
 const Header = () => {
   const SocialLinks = (
     <Links>
@@ -86,15 +109,21 @@ const Header = () => {
     </Links>
   );
 
+  const DownButton = (
+    <DownButtonContainer>
+      <a href="#about">
+        <i
+          className="fa fa-angle-double-down fa-2x"
+          style={{ marginTop: "7px", color: "black" }}
+        ></i>
+      </a>
+    </DownButtonContainer>
+  );
+
   const Information = (
     <InformationContainer>
       <Title>Frontend Engineering</Title>
-      <Text>
-        I'm a Front-End developer looking to improve in a challenging
-        environment that requires team-work effort to research, learn and
-        develop sustainable innovative projects/technologies that make the world
-        a better and easier place to live in.
-      </Text>
+      <Text>Because clean code matters...</Text>
       {SocialLinks}
     </InformationContainer>
   );
@@ -103,11 +132,10 @@ const Header = () => {
     <HeaderContainer>
       <Overlay>
         {Information}
+        {DownButton}
       </Overlay>
     </HeaderContainer>
   );
 };
 
 export default Header;
-
-
