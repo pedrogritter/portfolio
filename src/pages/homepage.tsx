@@ -5,6 +5,7 @@ import Footer from "../components/footer";
 import Header from "../components/header";
 import About from "../components/home/about";
 import Details from "../components/home/details";
+import Projects from "../components/home/projects";
 import Navbar from "../components/shared/navbar";
 
 const Homepage = () => {
@@ -15,6 +16,7 @@ const Homepage = () => {
             <Header />
             <About />
             <Details />
+            <Projects />
             <Footer />        
         </>
     );

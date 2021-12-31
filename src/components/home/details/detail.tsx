@@ -1,6 +1,11 @@
 import { down } from "styled-breakpoints";
 import styled from "styled-components";
 
+/* TODO:
+  - Add correct mobile padding; 
+  - Review font sizes and decoration;
+*/
+
 const DetailContainer = styled.div`
   display: flex;
   flex-direction: row;

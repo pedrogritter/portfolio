@@ -1,3 +1,8 @@
+/* TODO:
+  - Complete project data: imgs, urls, descriptions;
+  - 
+*/
+
 const resumeData = {
   hero: {
     title: "Frontend Engineering",

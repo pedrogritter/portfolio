@@ -4,7 +4,6 @@ const FooterContainer = styled.footer`
   background: #0f0f0f; 
   padding-top: 3rem;
   padding-bottom: 3rem;
-  /* margin-bottom: 48px; */
   color: #303030;
   font-size: 14px;
   text-align: center;
@@ -41,6 +40,7 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterList>
+        {/* TODO: Use react-icons instead of classnames for icons */}
         <a href="http://github.com/pedrogritter">
           <i className="fa fa-github fa-2x"></i>
         </a>

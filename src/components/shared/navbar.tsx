@@ -4,6 +4,10 @@ import HamburgerMenu from "react-hamburger-menu";
 import { Utils } from "../../core/utils";
 import { down } from "styled-breakpoints";
 
+{/*  TODO : Fix mobile containers - does not stay fixed it is problably because in mobile
+ user is not scrolling body but some other container
+*/ }
+
 const NavbarContainer = styled.nav`
   font: 20px "Titillium Web", sans-serif;
   font-weight: 400;

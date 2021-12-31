@@ -98,6 +98,7 @@ const DownButtonContainer = styled.div`
 `;
 
 const Header = () => {
+  // TODO: Use react-icons instead of classnames for icons
   const SocialLinks = (
     <Links>
       <a href="http://github.com/pedrogritter">

@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+/* TODO: - Add animation feature to progressbar */
+
 const BarWrapper = styled.div`
   progress[value] {
     width: 60vw;
