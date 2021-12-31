@@ -10,7 +10,6 @@ const NavbarContainer = styled.nav`
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  /* margin: 0 auto; */
   z-index: 100;
   position: fixed;
   left: 0;
@@ -20,7 +19,6 @@ const NavbarContainer = styled.nav`
 const NavList = styled.ul`
   min-height: 48px;
   width: auto;
-  /* center align the menu */
   text-align: center;
 `;
 
@@ -41,7 +39,6 @@ const NavItem = styled.li<{ active?: boolean }>`
     ${down("lg")}{
       font-size: 28px;
       padding: 12px 13px;
-      /* padding: 3rem; */
     }
 
     -webkit-transition: color 0.2s ease-in-out;
@@ -59,7 +56,6 @@ const MobileNavWrapper = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-  /* padding: 2rem; */
   background: none;
   position: fixed;
   z-index: 100;
@@ -70,8 +66,7 @@ const MobileNavContainer = styled.div<{ open?: boolean }>`
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  width: 65vw;
-  border-radius: 8px;
+  width: 100vw;
   background: rgba(0, 0, 0, 0.8);
   padding: 5rem 0rem;
   height: 100vh;

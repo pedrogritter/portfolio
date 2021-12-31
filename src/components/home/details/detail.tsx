@@ -5,21 +5,17 @@ const DetailContainer = styled.div`
   display: flex;
   flex-direction: row;
   padding-top: 2rem;
-  justify-content: space-around;
-
+  justify-content: space-between;
+  padding: 2rem;
 
   ${down("lg")} {
- flex-direction: column;
+    flex-direction: column;
   }
-
 `;
 const CategoryTitle = styled.div`
   font-size: 48px;
 
-  text-decoration: underline;
-  text-decoration-color: rgb(35, 229, 219);
-  text-decoration-thickness: 2px;
-
+  text-decoration: underline solid rgb(35, 229, 219) 2px;
 
   ${down("lg")} {
     font-size: 28px;
@@ -30,9 +26,12 @@ const CategoryTitle = styled.div`
 const Title = styled.div`
   font-size: 40px;
 
+  inline-size: 35rem;
+  overflow-wrap: break-word;
+
   ${down("lg")} {
     font-size: 20px;
-    text-align: center;
+    /* text-align: center; */
   }
 `;
 
@@ -46,9 +45,9 @@ const EntryContainer = styled.div`
 `;
 
 interface DetailProps {
-    category: string;
+  category: string;
   items: {
-    title: string;
+    name: string;
     description: string;
     specialization?: string;
     year?: number;
@@ -60,7 +59,7 @@ const Detail = (props: DetailProps) => {
     props.items &&
     props.items.map((item, key) => (
       <>
-        <Title>{item.title}</Title>
+        <Title>{item.name}</Title>
         <Content>{item.description}</Content>
       </>
     ));

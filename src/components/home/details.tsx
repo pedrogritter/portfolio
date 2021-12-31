@@ -1,14 +1,21 @@
 import { down } from "styled-breakpoints";
 import styled from "styled-components";
-import Detail from "./detail";
+import Detail from "./details/detail";
+import Skills from "./details/skills";
+import resumeData from "../../resumeData";
 
 const DetailsContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 6rem 16rem;
-  background-color: white;
+  background-color: darkgray;
   color: black;
+
+  /* Check all borders in details */
+  /* * {
+    border: 2px dashed blue;
+  } */
 
   ${down("lg")} {
     flex-direction: column;
@@ -25,34 +32,10 @@ const Separator = styled.div`
 `;
 
 const Details = () => {
-  const educationData = [
-    {
-      title: "Information Technology",
-      description: "Bsc in Computer Science, Web Applications",
-      specialization: "Minor in Geographical Information",
-      year: 2021,
-    },
-    {
-      title: "Audiovisuals & Multimedia",
-      description: "Create and edit multimedia content for films and TV",
-      specialization: "Focused on Video Editing",
-      year: 2015,
-    },
-  ];
 
-  const workData = [
-    {
-      title: "Aptoide",
-      description:
-        "Frontend Engineering: Build and manage app store portal used by millions of users",
-    },
-  ];
-
-  const Education = <Detail category="Education" items={educationData} />;
-
-  const Work = <Detail category="Work" items={workData} />;
-
-  const Skills = <Detail category="Skills" items={workData} />;
+  const Education = <Detail category="Education" items={resumeData.details.education} />;
+  const Work = <Detail category="Work" items={resumeData.details.work} />;
+  const SkillsC = <Skills skills={resumeData.details.skills} />;
 
   return (
     <DetailsContainer id="resume">
@@ -60,7 +43,7 @@ const Details = () => {
       <Separator />
       {Work}
       <Separator />
-      {Skills}
+      {SkillsC}
     </DetailsContainer>
   );
 };
