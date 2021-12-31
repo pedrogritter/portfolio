@@ -50,7 +50,7 @@ const Projects = () => {
   });
 
   return (
-    <ProjectsContainer>
+    <ProjectsContainer id="projects">
       <Title>Projects</Title>
       <ProjectListWrapper>{ProjectList}</ProjectListWrapper>
     </ProjectsContainer>

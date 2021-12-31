@@ -115,7 +115,6 @@ const Navbar = () => {
 
   const NavItems = Items.map((item, key) => {
     return (
-      // <NavItem key={key} active={current === item.name}>
       <NavItem key={key} >
         <a
           className="smoothscroll"

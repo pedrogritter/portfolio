@@ -36,12 +36,19 @@ const Title = styled.div`
 
   ${down("lg")} {
     font-size: 20px;
-    /* text-align: center; */
+    inline-size: 50vw;
+    overflow-wrap: break-word;
+    text-align: center;
   }
 `;
 
 const Content = styled.div`
   padding-bottom: 2rem;
+
+  ${down("lg")} {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 const EntryContainer = styled.div`
