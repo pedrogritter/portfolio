@@ -25,7 +25,7 @@ const DetailsContainer = styled.div`
 `;
 
 const Separator = styled.div`
-  border-bottom: 2px solid rgb(35, 229, 219);
+  border-bottom: 2px solid #0fb;
   ${down("lg")} {
     width: 60vw;
   }

@@ -4,8 +4,10 @@ import HamburgerMenu from "react-hamburger-menu";
 import { Utils } from "../../core/utils";
 import { down } from "styled-breakpoints";
 
-{/*  TODO : Fix mobile containers - does not stay fixed it is problably because in mobile
+{/*  TODO : 
+  -Fix mobile containers - does not stay fixed it is problably because in mobile
  user is not scrolling body but some other container
+ - Bellow hero it needs some kind of light background;
 */ }
 
 const NavbarContainer = styled.nav`

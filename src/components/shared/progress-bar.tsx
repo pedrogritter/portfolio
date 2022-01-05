@@ -9,15 +9,15 @@ const BarWrapper = styled.div`
     appearance: none;
 
     ::-webkit-progress-bar {
-      height: 50px;
+      height: 40px;
       border-radius: 8px;
       background-color: #eee;
     }
 
     ::-webkit-progress-value {
-      height: 50px;
+      height: 40px;
       border-radius: 8px;
-      background-color: rgb(35, 229, 219);
+      background-color: #0fb;;
     }
   }
 `;

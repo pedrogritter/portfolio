@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { RiCloseLine } from "react-icons/ri";
-import { ReactNode, useState } from "react";
+import { ReactNode } from "react";
 
 const DarkBG = styled.div`
   background-color: rgba(0, 0, 0, 0.2);

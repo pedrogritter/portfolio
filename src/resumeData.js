@@ -5,8 +5,11 @@
 
 const resumeData = {
   hero: {
-    title: "Frontend Engineering",
-    subtitle: "Because clean code matters...",
+    intro: "Hi there 👋 ",
+    title: "I'm Pedro Gritter",
+    job: "Frontend Developer 👨‍💻",
+    subtitle: "Currently working remotly on Frontend Engineering projects",
+    contact: "Contact me for work",
   },
   aboutme:
     "I'm a Front-End developer looking to improve in a challenging environment that requires team-work effort to research, learn and develop sustainable innovative projects/technologies that make the world a better and easier place to live in.",
@@ -32,7 +35,7 @@ const resumeData = {
   details: {
     education: [
       {
-        name: "Faculty of Sciences of the University of Lisbon",
+        name: "University of Lisbon",
         description: "Bsc in Computer Science",
         specialization: "Minor in Geographical Information",
         year: 2021,
@@ -99,11 +102,12 @@ const resumeData = {
       url: "http://limitless-anchorage-80811.herokuapp.com/",
     },
     {
-       name: "Drexciya React",
-      description: "A simple project built to experiment with React - displays tracks from Drexciya",
+      name: "Drexciya React",
+      description:
+        "A simple project built to experiment with React - displays tracks from Drexciya",
       imgurl: "images/portfolio/phone.jpg",
       url: "http://limitless-anchorage-80811.herokuapp.com/",
-    }
+    },
   ],
 };
 

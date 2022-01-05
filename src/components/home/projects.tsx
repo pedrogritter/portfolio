@@ -28,7 +28,7 @@ const ProjectListWrapper = styled.div`
 
 const Title = styled.div`
   font-size: 48px;
-  text-decoration: underline solid rgb(35, 229, 219) 2px;
+  text-decoration: underline solid #0fb 2px;
 
   ${down("lg")} {
     font-size: 28px;
